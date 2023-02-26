@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.cdnfonts.com/css/proxima-nova-2" rel="stylesheet">
     <title>Security</title>
     <style>
         @font-face {
@@ -36,8 +37,6 @@
             letter-spacing: 0.3px;
             font-size: 15px;
             color: #1A1A1A;
-            padding-left: 7px;
-            padding-right: 7px;
 
         }
 
@@ -65,11 +64,11 @@
 
 
         .first_table {
-            width: 95%;
+            width: 90%;
             background-color: white;
             border-radius: 20px;
             padding-top: 20px;
-            padding-bottom: 20px;
+            padding-bottom: 5px;
         }
 
 
@@ -88,15 +87,15 @@
         }
 
         .debit {
-            padding: 0px 40px 0px 40px;
-
+            padding: 0px 25px 0px 25px;
         }
 
-        .price {
-            font-weight: 700;
-            padding: 0px 50px 0px 50px;
-            color: #1CC578;
+        @media screen and (min-width: 600px) {
+            .debit {
+                padding: 0px 40px 0px 40px;
+            }
         }
+
 
         .btn {
             height: 34px;
@@ -108,35 +107,38 @@
             font-weight: 700;
         }
 
-        .btn_div {
-            display: flex;
-            justify-content: center;
-        }
-
-        #footer {
-            width: 60%;
-            display: flex;
-            flex-direction: column;
-            font-size: 12px;
-        }
-
 
         p {
             font-size: 14px;
-            font-family: Proxima-Regular;
+            font-family: 'Proxima Nova', sans-serif;
         }
 
         #end {
             color: #A8A8A8;
+            font-size: 12px;
+            margin: 5px;
+        }
+
+
+        @media screen and (min-width: 600px) {
+            #end {
+                color: #A8A8A8;
+                font-size: 12px;
+                margin: 0;
+            }
+        }
+
+        #links {
+            padding-left: 15px;
+            padding-right: 15px;
         }
     </style>
 </head>
 
 <body class="main_body">
-    <center class="wrapper" style="padding-top: 50px; padding-bottom: 50px; background-color: #F7F7F7;">
+    <center class="wrapper">
 
         <table class="first_table">
-
 
             <tr>
                 <td align="center" style='text-align:center;' class="logo">
@@ -145,8 +147,9 @@
                             cellpadding="0">
                             <tr>
                                 <td class="btn_width" align="center" style='text-align:center'>
-                                <td>
-                                    <img src="https://res.cloudinary.com/dj0ex8nyv/image/upload/v1675894137/moneey_tsf23d.svg">
+                                    <img style="width: 100px;"
+                                        src="https://res.cloudinary.com/dj0ex8nyv/image/upload/v1677018618/the_mooney_vnsydf.png">
+
                                 </td>
                             </tr>
                         </table>
@@ -156,9 +159,13 @@
 
 
 
+
             <tr>
                 <td class="BODY">
                     <table width="100%">
+
+
+
                         <tr>
                             <td>
                                 <table>
@@ -166,17 +173,6 @@
                                         <td>
                                             <p class="credit">
                                                 Security Alert!</p>
-                                        </td>
-                                    </tr>
-                                </table>
-                            </td>
-                        </tr>
-
-                        <tr>
-                            <td>
-                                <table>
-                                    <tr>
-                                        <td>
                                             <p class="debit">Hi Yeunde</p>
                                             <p class="debit">We noticed a new login to your Moneey app account. </p>
 
@@ -216,26 +212,24 @@
 
 
                         <tr>
-                            <td align="center" style='text-align:center;' class="btn_div">
+                            <td align="center" style='text-align:center;'>
                                 <center class="wrapper">
                                     <table class="btn_width" align="center" style='text-align:center' border="0"
                                         cellspacing="0" cellpadding="0">
                                         <tr>
-                                            <td>
-                                                <p class="debit" style="color: #A8A8A8;">
+                                            <td class="btn_width" align="center" style='text-align:center'>
+                                                <p class="debit" style="color: #A8A8A8; font-size: 12px; line-height: 15px;">
                                                     You received this mail to let you know about important changes to
                                                     your
                                                     Moneey
                                                     App account.</p>
-
-
-
                                             </td>
                                         </tr>
                                     </table>
                                 </center>
                             </td>
                         </tr>
+
 
 
                     </table>
@@ -249,13 +243,13 @@
 
 
         <tr>
-            <td align="center" style='text-align:center;'>
-                <center class="wrapper" id="links">
+            <td align="center" style='text-align:center;' id="links">
+                <center class="wrapper">
                     <table class="btn_width" align="center" style='text-align:center' border="0" cellspacing="0"
                         cellpadding="0">
                         <tr>
                             <td class="btn_width" align="center" style='text-align:center'>
-                                <p class="">
+                                <p style="font-size: 12px;">
                                     If there is an issue with this email or transaction <a href="#">click here</a></p>
                                 <div>
                                     <p id="end">This email is for Yetunde Musa from Moneey Inc. </p>

@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.cdnfonts.com/css/proxima-nova-2" rel="stylesheet">
     <title>credit</title>
     <style>
         @font-face {
@@ -24,6 +25,8 @@
                 font-style: normal;
                 background-color: #F7F7F7;
                 width: auto;
+                padding-top: 50px;
+                padding-bottom: 50px;
             }
         }
 
@@ -35,7 +38,6 @@
             letter-spacing: 0.3px;
             font-size: 15px;
             color: #1A1A1A;
-
         }
 
 
@@ -65,7 +67,7 @@
             background-color: white;
             border-radius: 20px;
             padding-top: 20px;
-            padding-bottom: 20px;
+            padding-bottom: 5px;
         }
 
 
@@ -84,15 +86,32 @@
             font-weight: 700;
         }
 
-        .debit {
+        /* .debit {
             padding: 0px 50px 0px 50px;
+        } */
 
+        .debit {
+            padding: 0px 30px 0px 30px;
+        }
+
+        @media screen and (min-width: 600px) {
+            .debit {
+                padding: 0px 50px 0px 50px;
+            }
         }
 
         .price {
             font-weight: 700;
-            padding: 0px 50px 0px 50px;
+            padding: 0px 30px 0px 30px;
             color: #1CC578;
+        }
+
+        @media screen and (min-width: 600px) {
+            .price {
+                font-weight: 700;
+                padding: 0px 50px 0px 50px;
+                color: #1CC578;
+            }
         }
 
         .btn {
@@ -105,33 +124,38 @@
             font-weight: 700;
         }
 
-        .btn_div {
-            display: flex;
-            justify-content: center;
-        }
-
-        #footer {
-            width: 60%;
-            display: flex;
-            flex-direction: column;
-            font-size: 12px;
-        }
-
 
         p {
             font-size: 14px;
-            font-family: Proxima-Regular;
+            font-family: 'Proxima Nova', sans-serif;
         }
 
 
-        #end{ 
+        #end {
             color: #A8A8A8;
+            font-size: 12px;
+            margin: 5px;
+        }
+
+
+        @media screen and (min-width: 600px) {
+            #end {
+                color: #A8A8A8;
+                font-size: 12px;
+                margin: 0;
+            }
+        }
+
+
+        #links {
+            padding-left: 15px;
+            padding-right: 15px;
         }
     </style>
 </head>
 
 <body class="main_body">
-    <center class="wrapper" style="padding-top: 50px; padding-bottom: 50px; background-color: #F7F7F7;">
+    <center class="wrapper">
 
         <table class="first_table">
 
@@ -143,8 +167,8 @@
                             cellpadding="0">
                             <tr>
                                 <td class="btn_width" align="center" style='text-align:center'>
-                                <td>
-                                    <img src="https://res.cloudinary.com/dj0ex8nyv/image/upload/v1675894137/moneey_tsf23d.svg">
+                                    <img style="width: 100px;"
+                                        src="https://res.cloudinary.com/dj0ex8nyv/image/upload/v1677018618/the_mooney_vnsydf.png">
 
                                 </td>
                             </tr>
@@ -158,6 +182,8 @@
                 <td class="BODY">
 
                     <table width="100%">
+
+
                         <tr>
                             <td>
                                 <table>
@@ -165,56 +191,29 @@
                                         <td>
                                             <p class="credit">
                                                 Credit Alert!</p>
-                                        </td>
-                                    </tr>
-                                </table>
-                            </td>
-                        </tr>
-
-
-                        <tr>
-                            <td>
-                                <table>
-                                    <tr>
-                                        <td>
                                             <p class="debit">Hi Yeunde</p>
                                             <p class="debit">Your Moneey account has been credited. </p>
-
-                                        </td>
-                                    </tr>
-                                </table>
-                            </td>
-                        </tr>
-
-
-
-                        <tr>
-                            <td>
-                                <table>
-                                    <tr>
-                                        <td>
                                             <p class="price">
                                                 + ₦3,500.00</p>
 
-
-
-                                        </td>
-                                    </tr>
-                                </table>
-                            </td>
-                        </tr>
-
-
-
-                        <tr>
-                            <td>
-                                <table>
-                                    <tr>
-                                        <td>
                                             <p class="debit"> From: Kunle Okechukwu <br>
                                                 01 - 02 - 2023 <br>
                                                 7:45pm
                                             </p>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+
+
+
+                        <tr>
+                            <td>
+                                <table>
+                                    <tr>
+                                        <td>
+
                                             <p class="debit">
                                                 Comment: <span style="font-weight: 700;">Thanks for lunch!</span></p>
                                             <p class="debit" style="color: #A8A8A8;">
@@ -246,13 +245,13 @@
 
 
                         <tr>
-                            <td align="center" style='text-align:center;' class="btn_div">
+                            <td align="center" style='text-align:center;'>
                                 <center class="wrapper">
                                     <table class="btn_width" align="center" style='text-align:center' border="0"
                                         cellspacing="0" cellpadding="0">
                                         <tr>
                                             <td>
-                                                <p class="debit" style="color: #A8A8A8;">
+                                                <p class="debit" style="color: #A8A8A8; font-size: 12px; line-height: 15px;">
                                                     You received this mail to let you know about important changes to
                                                     your
                                                     Moneey
@@ -280,13 +279,13 @@
 
 
         <tr>
-            <td align="center" style='text-align:center;' class="logo">
-                <center class="wrapper" id="links">
-                    <table class="btn_width" width="100%" align="center" style='text-align:center' border="0" cellspacing="0"
-                        cellpadding="0">
+            <td align="center" style='text-align:center;' id="links">
+                <center class="wrapper">
+                    <table class="btn_width" width="100%" align="center" style='text-align:center' border="0"
+                        cellspacing="0" cellpadding="0">
                         <tr>
                             <td class="btn_width" align="center" style='text-align:center'>
-                                <p class="">
+                                <p style="font-size: 12px;">
                                     If there is an issue with this email or transaction <a href="#">click here</a></p>
                                 <div>
                                     <p id="end">This email is for Yetunde Musa from Moneey Inc. </p>
